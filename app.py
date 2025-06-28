@@ -188,11 +188,23 @@ with st.sidebar:
     st.caption("SYSTEM STATUS")
     proxy_status = st.empty()
     
+    # Replace the existing clear session button code with:
+
     st.divider()
-    if st.button("Clear Session", type="secondary"):
-        if st.confirm("Are you sure? This will erase all generated content"):
-            st.session_state.clear()
-            st.rerun()
+    if st.button("Clear Session", type="secondary", key="clear_session_btn"):
+        st.session_state.clear_session_confirm = True
+
+    if st.session_state.get('clear_session_confirm'):
+        st.warning("Are you sure? This will erase all generated content")
+        col1, col2 = st.columns(2)
+        with col1:
+            if st.button("Yes, Clear Everything", key="confirm_clear"):
+                st.session_state.clear()
+                st.session_state.clear_session_confirm = False
+                st.rerun()
+        with col2:
+            if st.button("Cancel", key="cancel_clear"):
+                st.session_state.clear_session_confirm = False
 
 # Main content
 tab1, tab2 = st.tabs(["✨ GENERATOR", "📊 SEO ANALYSIS"])
