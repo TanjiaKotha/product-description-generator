@@ -237,12 +237,11 @@ with tab1:
                 proxy_status.info(f"Using AI provider: {generator.current_proxy.split('//')[1].split('/')[0]}")
                 
                 # Generate description
+                # app.py (line ~240)
                 description = generator.generate_description(
                     product_name=full_name, 
                     features=features,
-                    product_type=product_type.lower(),
-                    tone=tone.lower(),
-                    audience=target_audience.lower()
+                    product_type=product_type.lower()
                 )
                 
                 # SEO processing
