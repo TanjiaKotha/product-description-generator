@@ -32,5 +32,4 @@ Generate professional, SEO-optimized product descriptions for any product in sec
 
 ## Deployment
 
-[![Hugging Face Spaces](https://img.shields.io/badge/🤗%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/your-username/product-description-generator)
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://your-app-name.streamlit.app)
