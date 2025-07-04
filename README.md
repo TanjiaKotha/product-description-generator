@@ -32,4 +32,4 @@ Generate professional, SEO-optimized product descriptions for any product in sec
 
 ## Deployment
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://your-app-name.streamlit.app)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)] https://appuct-description-generator-tanjia-tasnim-kotha-2025.streamlit.app/
